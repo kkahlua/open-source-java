@@ -5,11 +5,11 @@ public class quiz {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Ã¹¹ø¤Š ¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â : ");
+		System.out.print("ì²«ë²ˆì¨° ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥ : ");
 		double a_x = scanner.nextDouble();
 		double a_y = scanner.nextDouble();
 		double a_r = scanner.nextDouble();
-		System.out.print("µÎ¹ø¤Š ¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â : ");
+		System.out.print("ë‘ë²ˆì¨° ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥ : ");
 		double b_x = scanner.nextDouble();
 		double b_y = scanner.nextDouble();
 		double b_r = scanner.nextDouble();
@@ -25,8 +25,8 @@ public class quiz {
 		double l = dif_x*dif_x +dif_y*dif_y;
 		l= Math.sqrt(l);
 		if(l<=a_r+b_r)
-			System.out.print("µÎ ¿øÀº ¼­·Î ÈÄ£´Ù");
+			System.out.print("ë‘ ì›ì€ ì„œë¡œ ê³‚ì¹œë‹¤");
 		else
-			System.out.print("µÎ ¿øÀº ¼­·Î ÈÄ¡Áö ¾Ê´Â´Ù");
+			System.out.print("ë‘ ì›ì€ ì„œë¡œ ê³‚ì¹˜ì§€ ì•ŠëŠ”ë‹¤");
 	}
 }
