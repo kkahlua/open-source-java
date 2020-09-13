@@ -28,5 +28,6 @@ public class quiz {
 			System.out.print("두 원은 서로 곂친다");
 		else
 			System.out.print("두 원은 서로 곂치지 않는다");
+		
 	}
 }
