@@ -13,50 +13,51 @@ public class quiz3_2 {
 		int on_off=1;
 		while (on_off==1)
 		{
-			System.out.println("ÄÄÇ»ÅÍ¿Í °¡À§ ¹ÙÀ§ º¸ °ÔÀÓÀ» ÇÕ´Ï´Ù.");
-			System.out.print("°¡À§ ¹ÙÀ§ º¸!>>");
+			System.out.println("ì»´í“¨í„°ì™€ ê°€ìœ„ ë°”ìœ„ ë³´ ê²Œì„ì„ í•©ë‹ˆë‹¤.");
+			System.out.print("ê°€ìœ„ ë°”ìœ„ ë³´!>>");
 			user= scanner.next();
 			cpu = rand.nextInt(3);
 			if(cpu==1)
-				cpu_s = "°¡À§";
+				cpu_s = "ê°€ìœ„";
 			else if(cpu==2)
-				cpu_s = "¹ÙÀ§";
+				cpu_s = "ë°”ìœ„";
 			else
-				cpu_s="º¸";
+				cpu_s="ë³´";
 			switch(user)
 			{
-				case "°¡À§" :
-					if(cpu_s=="°¡À§")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", ºñ°å½À´Ï´Ù.");
-					else if(cpu_s=="¹ÙÀ§")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", »ç¿ëÀÚ°¡ Á³½À´Ï´Ù.");
-					else if(cpu_s=="º¸")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", »ç¿ëÀÚ°¡ ÀÌ°å½À´Ï´Ù.");
+				case "ê°€ìœ„" :
+					if(cpu_s=="ê°€ìœ„")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ë¹„ê²¼ìŠµë‹ˆë‹¤.");
+					else if(cpu_s=="ë°”ìœ„")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ì‚¬ìš©ìê°€ ì¡ŒìŠµë‹ˆë‹¤.");
+					else if(cpu_s=="ë³´")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ì‚¬ìš©ìê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
 					break;
-				case "¹ÙÀ§":
-					if(cpu_s=="°¡À§")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", »ç¿ëÀÚ°¡ ÀÌ°å½À´Ï´Ù.");
-					else if(cpu_s=="¹ÙÀ§")
-					System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", ºñ°å½À´Ï´Ù.");
-					else if(cpu_s=="º¸")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", »ç¿ëÀÚ°¡ Á³½À´Ï´Ù.");
+				case "ë°”ìœ„":
+					if(cpu_s=="ê°€ìœ„")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ì‚¬ìš©ìê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
+					else if(cpu_s=="ë°”ìœ„")
+					System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ë¹„ê²¼ìŠµë‹ˆë‹¤.");
+					else if(cpu_s=="ë³´")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ì‚¬ìš©ìê°€ ì¡ŒìŠµë‹ˆë‹¤.");
 					break;
-				case "º¸":
-					if(cpu_s=="°¡À§")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", »ç¿ëÀÚ°¡ Á³½À´Ï´Ù.");
-					else if(cpu_s=="¹ÙÀ§")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", »ç¿ëÀÚ°¡ ÀÌ°å½À´Ï´Ù.");
-					else if(cpu_s=="º¸")
-						System.out.print("»ç¿ëÀÚ = "+user+" , ÄÄÇ»ÅÍ = "+cpu_s+", ºñ°å½À´Ï´Ù.");
+				case "ë³´":
+					if(cpu_s=="ê°€ìœ„")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ì‚¬ìš©ìê°€ ì¡ŒìŠµë‹ˆë‹¤.");
+					else if(cpu_s=="ë°”ìœ„")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ì‚¬ìš©ìê°€ ì´ê²¼ìŠµë‹ˆë‹¤.");
+					else if(cpu_s=="ë³´")
+						System.out.print("ì‚¬ìš©ì = "+user+" , ì»´í“¨í„° = "+cpu_s+", ë¹„ê²¼ìŠµë‹ˆë‹¤.");
 					break;
-				case "±×¸¸":
+				case "ê·¸ë§Œ":
 					on_off=0;
-					System.out.print("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù........");
+					System.out.print("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤........");
 					break;
 				default:
-					System.out.print("Àß¸øµÈ ÀÔ·ÂÀ» ÇÏ¼Ì½À´Ï´Ù.");
+					System.out.print("ì˜ëª»ëœ ì…ë ¥ì„ í•˜ì…¨ìŠµë‹ˆë‹¤.");
 			}
 		}
+		scanner.close();
 	}
 
 }
