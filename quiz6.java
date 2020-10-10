@@ -5,7 +5,7 @@ class Person{
 	private int b=-1;
 	private int c=-1;
 	public int on_off=1;
-	public String id;
+	public String id; 
 	
 	
 	public void Set_Random() {
@@ -22,9 +22,9 @@ class Person{
 			on_off=0;
 		}
 		if(on_off==1)
-		System.out.println("\t"+a+"\t"+b+"\t"+c+"\t¾Æ½±±º¿ä!");
+		System.out.println("\t"+a+"\t"+b+"\t"+c+"\tÂ¾Ã†Â½Â±Â±ÂºÂ¿Ã¤!");
 		else
-			System.out.println("\t"+a+"\t"+b+"\t"+c+"\t"+id+"´ÔÀÌ ÀÌ°å½À´Ï´Ù!");
+			System.out.println("\t"+a+"\t"+b+"\t"+c+"\t"+id+"Â´Ã”Ã€ÃŒ Ã€ÃŒÂ°Ã¥Â½Ã€Â´ÃÂ´Ã™!");
 	}
 }
 public class quiz6 {
@@ -35,9 +35,9 @@ public class quiz6 {
 		String buffer;
 		Person user_a = new Person();
 		Person user_b= new Person();
-		System.out.print("1¹ø¤Š ¼±¼ö ÀÌ¸§>>");
+		System.out.print("1Â¹Ã¸Â¤Å  Â¼Â±Â¼Ã¶ Ã€ÃŒÂ¸Â§>>");
 		user_a.id = scanner.next();
-		System.out.print("2¹ø¤Š ¼±¼ö ÀÌ¸§>>");
+		System.out.print("2Â¹Ã¸Â¤Å  Â¼Â±Â¼Ã¶ Ã€ÃŒÂ¸Â§>>");
 		user_b.id = scanner.next();
 		buffer=scanner.nextLine();
 		while(on_off==1)
