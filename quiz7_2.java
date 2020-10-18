@@ -24,17 +24,17 @@ public class quiz7_2 {
 	static public class Game {
 		private void Input() {
 			int size = map.size();
-			System.out.println("ÇöÀç " + size + "°³ ³ª¶ó¿Í ¼öµµ°¡ ÀÔ·ÂµÇ¾î ÀÖ½À´Ï´Ù.");
+			System.out.println("í˜„ì¬ " + size + "ê°œ ë‚˜ë¼ì™€ ìˆ˜ë„ê°€ ì…ë ¥ë˜ì–´ ìˆìŠµë‹ˆë‹¤.");
 			size++;
 			while(true) {
-				System.out.print("³ª¶ó¿Í ¼öµµ ÀÔ·Â" + size + ">> ");
+				System.out.print("ë‚˜ë¼ì™€ ìˆ˜ë„ ì…ë ¥" + size + ">> ");
 				String word1 = scanner.next(); 
-				if(word1.equals("±×¸¸")) {
+				if(word1.equals("ê·¸ë§Œ")) {
 					break;
 				}
 				String word2 = scanner.next();
 				if(map.containsKey(word1)) { 
-					System.out.println(word1 + "´Â ÀÌ¹Ì ÀÖ½À´Ï´Ù!");
+					System.out.println(word1 + "ëŠ” ì´ë¯¸ ìˆìŠµë‹ˆë‹¤!");
 					continue;
 				}
 				map.put(word1,word2);
@@ -47,47 +47,45 @@ public class quiz7_2 {
 			while(true) {
 				String q = it.next();
 				String a = map.get(q);
-				System.out.print(q + "ÀÇ ¼öµµ´Â? ");
+				System.out.print(q + "ì˜ ìˆ˜ë„ëŠ”? ");
 				String user = scanner.next();
-				if(user.equals("±×¸¸")) {
+				if(user.equals("ê·¸ë§Œ")) {
 					break;
 				}
 				if(user.equals(a))
-					System.out.println("Á¤´ä!");
+					System.out.println("ì •ë‹µ!");
 				else
-					System.out.println("¾Æ´Õ´Ï´Ù!");	
+					System.out.println("ì•„ë‹™ë‹ˆë‹¤!");	
 				/*
 				int index = (int)(Math.random()*map.size());
 				Nation nation = v.get(index);
 				String q = nation.GetCountry();
 				String a = nation.GetCapital();
-				System.out.print(q + "ÀÇ ¼öµµ´Â? ");
+				System.out.print(q + "ì˜ ìˆ˜ë„ëŠ”? ");
 				String user = scanner.next(); 
-				if(user.equals("±×¸¸")) {
+				if(user.equals("ê·¸ë§Œ")) {
 					break;
 				}
 				if(user.equals(a))
-					System.out.println("Á¤´ä!");
+					System.out.println("ì •ë‹µ!");
 				else
-					System.out.println("¾Æ´Õ´Ï´Ù!");	
+					System.out.println("ì•„ë‹™ë‹ˆë‹¤!");	
 					*/			
 			}	
 		}
 		public void Start() {
-			System.out.println("**** ¼öµµ ¸ÂÃß±â °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù. ****");
+			System.out.println("**** ìˆ˜ë„ ë§ì¶”ê¸° ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤. ****");
 			while(true) {
-				System.out.print("ÀÔ·Â:1, ÄûÁî:2, Á¾·á:3>> ");
+				System.out.print("ì…ë ¥:1, í€´ì¦ˆ:2, ì¢…ë£Œ:3>> ");
 				int menu = scanner.nextInt();
 				switch(menu) {
 					case 1: Input(); break;
 					case 2: Quiz(); break;
-					case 3:	System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù."); return;
+					case 3:	System.out.println("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤."); return;
 				}
 			}
 		}
 	}
-
-
 	public static void main(String[] args) {
 		Game game;
 		game = new Game();
